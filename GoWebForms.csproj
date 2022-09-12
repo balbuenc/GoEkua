@@ -282,6 +282,7 @@
     <Content Include="css\sb-admin.css" />
     <Content Include="css\sb-admin.min.css" />
     <Content Include="asignaciones.aspx" />
+    <Content Include="MainMenu.aspx" />
     <Content Include="dte_detalle.aspx" />
     <Content Include="dte.aspx" />
     <Content Include="documentos.aspx" />
@@ -303,8 +304,6 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="css\front.css.map" />
-    <None Include="Properties\PublishProfiles\IISProfile.pubxml" />
-    <None Include="Properties\PublishProfiles\IISProfile1.pubxml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="home.aspx" />
     <Content Include="ingresar.aspx" />
@@ -2126,6 +2125,13 @@
     <Compile Include="asignaciones.aspx.designer.cs">
       <DependentUpon>asignaciones.aspx</DependentUpon>
     </Compile>
+    <Compile Include="MainMenu.aspx.cs">
+      <DependentUpon>MainMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MainMenu.aspx.designer.cs">
+      <DependentUpon>MainMenu.aspx</DependentUpon>
+    </Compile>
     <Compile Include="dte_detalle.aspx.cs">
       <DependentUpon>dte_detalle.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2174,6 +2180,10 @@
     </Compile>
     <Compile Include="parametros.aspx.designer.cs">
       <DependentUpon>parametros.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ResponseData.cs" />
+    <Compile Include="SearchArticulo.ashx.cs">
+      <DependentUpon>SearchArticulo.ashx</DependentUpon>
     </Compile>
     <Compile Include="variables.aspx.cs">
       <DependentUpon>variables.aspx</DependentUpon>
@@ -2232,12 +2242,14 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Files\" />
+    <Folder Include="Properties\PublishProfiles\" />
     <Folder Include="Sifen\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+    <Content Include="SearchArticulo.ashx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
