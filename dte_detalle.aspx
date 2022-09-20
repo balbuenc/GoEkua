@@ -78,9 +78,11 @@
 
         <link href="css/jquery-ui.css" rel="stylesheet" />
         <link href="css/Enigma.css" rel="stylesheet" />
-        
-        <script src="Scripts/jquery-3.4.1.js"></script>
+       
+        <script src="Scripts/jquery-3.0.0.js"></script>
+        <script src="Scripts/jquery-ui-1.13.2.js"></script>
 
+         <script src="Scripts/bootstrap.js"></script>
 
         <script type="text/javascript">
             $(function () {
